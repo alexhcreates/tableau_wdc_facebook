@@ -16,7 +16,7 @@
      });
        
      FB.AppEvents.logPageView();   
-       
+     
    };
  
    (function(d, s, id){
@@ -27,9 +27,9 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
  </script>
-      <div>
-         <button id="submitButton" class="btn btn-success">Get Data</button>
-      </div>
+     <button onclick='FB.AppEvents.logEvent("buttonClicked")'>
+      Click me
+    </button>
    </body>
    <script src="libs/jquery/dist/jquery.min.js"></script>
    <script src="js/tableauwdc-2.3.latest.js"></script>
